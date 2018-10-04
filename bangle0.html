@@ -1,0 +1,81 @@
+
+
+<html>
+    <mata charset="utf-8">
+	<head><style> p{display :inline; 
+	padding: 2px; margin-left: 12px; width: 20%;   }
+	#pic0{ margin-left:20px;}
+	#pic1{ margin-left:15px;}
+	img{width:180px; height:200px;opacity:0.6;margin-top:30px;
+		margin-left:27px;}
+	img:hover{opacity: 1.0; transform: scale(1.28);
+	    transition-duration: 0.8s;}
+	    a{float:right;}
+	    h1{font-family:broadway }
+
+	h3{ font-family: castellar ; }
+	
+	
+
+</style>
+
+
+<script type='text/javascript'>
+	
+
+	
+
+function main(){
+		
+var bangle=["Bangle/bng00.jpg", "Bangle/bng01.jpg","Bangle/bng02.jpg","Bangle/bng03.jpg","Bangle/bng04.jpg"];
+
+	var imgParents=document.getElementsByName("imglst");
+for(var i=0;i<Math.min(imgParents.length,bangle.length);i++){
+		var img=document.createElement("img");
+		img.src=bangle[i];
+				
+	imgParents[i].appendChild(img).onclick=function(){
+		var str=this.getAttribute('src');
+		
+		var ph=str.substr(0,12);
+		window.location.href=ph+".html";
+	}
+	
+	  			
+	}
+	
+
+}
+
+
+</script>
+
+	</head>
+	
+	<body onload="main()">
+
+		<h1>Hong Kong Creative Jewellery </h1>
+	<a href='index.html'><img src='return.png' style='width:80px; height:45px; transform: none;opacity:0.9;margin-right:35px;'></a>
+
+		<h3 >&nbsp; &nbsp;Bangles as gift items ...</h3>
+		
+	
+		<p id='pic0' name="imglst"></p>
+		<p id='pic1'name="imglst"></p>
+		<p name="imglst"></p>
+		<p name="imglst"></p>
+		<p name="imglst"></p>
+	
+		
+		
+			 
+		
+		
+	</body>
+
+	
+	
+	
+</html>
+
+

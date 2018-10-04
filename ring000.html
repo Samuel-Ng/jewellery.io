@@ -1,0 +1,79 @@
+
+
+<html>
+    <mata charset="utf-8">
+	<head><style> p{display :inline; 
+	padding: 2px; margin-left: 30px;  }
+	#pic0{ margin-left:20px;}
+	#pic1{ margin-left:15px;} 
+	img{width:170px; height:170px;opacity:0.6;margin-top:30px;
+		margin-left: 28px;}
+
+	img:hover{opacity: 1.0; transform: scale(1.31);
+	    transition-duration: 0.8s;}
+	    h1{font-family:broadway }
+	    a{ float: right; }
+
+	h3{ font-family: castellar ; }
+	
+
+</style>
+
+
+<script type='text/javascript'>
+	
+
+function main(){
+		
+var rg=["Ring/Ring00.jpg", "Ring/Ring01.jpg" ,"Ring/Ring02.jpg", "Ring/Ring03.jpg" ,"Ring/Ring04.jpg"];
+
+	var imgParents=document.getElementsByName("imglst");
+for(var i=0;i<Math.min(imgParents.length,rg.length);i++){
+		var img=document.createElement("img");
+		img.src=rg[i];
+				
+	imgParents[i].appendChild(img).onclick=function(){
+		var str=this.getAttribute('src') ;
+		var ph=str.substr(0,11);
+		window.location.href=ph+".html";
+	}
+	
+	  			
+	}
+	
+
+}
+
+
+</script>
+
+
+
+	</head>
+	
+	<body onload="main()">
+
+		<h1>Hong Kong Creative Jewellery </h1>
+    
+    <a href='index.html'><img src='return.png' style='width:80px; height:45px; transform: none;opacity:0.9;margin-right:42px;'></a>
+
+		<h3 >&nbsp; &nbsp;Rings for various occasions ...</h3>
+		
+
+	     <br />
+		<p id='pic0' name="imglst"></p>
+		<p id='pic1'name="imglst"></p>
+		<p name="imglst"></p>
+		<p name="imglst"></p>
+		<p name="imglst"></p>
+		
+		
+		
+	
+		
+	</body>
+
+	
+</html>
+
+

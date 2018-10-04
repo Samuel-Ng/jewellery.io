@@ -1,0 +1,7 @@
+<html>
+
+
+<span>item no.A23<img src='pics/oval.jpg'>  </span>
+
+
+</html>
